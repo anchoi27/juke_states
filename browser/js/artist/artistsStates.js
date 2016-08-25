@@ -13,3 +13,19 @@ juke.config(function ($stateProvider) {
     controller: 'ArtistCtrl'
   });
 });
+
+juke.config(function ($stateProvider) {
+  $stateProvider.state('singleArtistList.albums', {
+    url: 'albums',
+    templateUrl: '/js/artist/artistAlbumTemplate.html',
+    controller: 'AlbumsCtrl'
+  });
+});
+
+juke.config(function ($stateProvider) {
+  $stateProvider.state('singleArtistList.songs', {
+    url: 'songs',
+    templateUrl: '/js/artist/artistSongsTemplate.html',
+    controller: 'ArtistCtrl'
+  });
+});
