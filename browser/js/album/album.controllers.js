@@ -49,7 +49,7 @@ juke.controller('AlbumCtrl', function ($scope, $log, PlayerFactory, AlbumFactory
 
 juke.controller('AlbumsCtrl', function ($scope, $log, $rootScope, PlayerFactory, AlbumFactory, $stateParams) {
 
-  $scope.showMe = true;
+  // $scope.showMe = true;
 
   // $scope.$on('viewSwap', function (event, data) {
   //   $scope.showMe = (data.name === 'allAlbums');

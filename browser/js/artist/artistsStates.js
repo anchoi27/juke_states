@@ -1,5 +1,10 @@
 juke.config(function ($stateProvider) {
   $stateProvider.state('artistList', {
+  resolve: {
+    artists: function(ArtistFactory) {
+      return ArtistFactory.fetchAll()
+    }
+  },
     url: 'artists',
     templateUrl: '/js/artist/artistsTemplate.html',
     controller: 'ArtistsCtrl'

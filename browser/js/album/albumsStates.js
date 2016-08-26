@@ -1,5 +1,10 @@
 juke.config(function ($stateProvider) {
   $stateProvider.state('albumList', {
+  //   resolve: {
+  //   albums: function(AlbumFactory) {
+  //     return AlbumFactory.fetchAll()
+  //   }
+  // },
     url: 'albums',
     templateUrl: '/js/album/albumsTemplate.html',
     controller: 'AlbumsCtrl'
